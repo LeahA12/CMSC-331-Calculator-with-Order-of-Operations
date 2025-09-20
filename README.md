@@ -21,8 +21,14 @@ Lex and Yacc Program of a command-line calculator that processes infix mathemati
     ```
     ./calc
     ```
-3. **Output Verification:** The program will start with a prompt (>>). You can type in an expression and press enter to see the result. The output should match the examples provided in ```correctInputAndOutputEx.txt```.
+3. **Output Verification:** The program will start with a prompt ``>> ``. You can type in an expression and press enter to see the result. The output should match the examples provided in ```correctInputAndOutputEx.txt```.
 
 ## ADDITIONAL INFORMATION:
-* The calculator utilizes a symbol table to handle variable assignments. When a variable name is encountered, the symbol table stores its corresponding value, allowing the program to recall and use it in subsequent calculations. For example, if a user enters `x = 5`, the calculator assigns the value `5` to the variable `x`. When `x + 2` is entered later, the program retrieves the stored value of `x` to correctly calculate the result, which is `7`.
+* The calculator utilizes a symbol table to handle variable assignments. When a variable name is encountered, the symbol table stores its corresponding value, allowing the program to recall and use it in subsequent calculations.
+    Ex:
+    ```
+    >> x = 5 
+    >> x + 2
+    7
+    ```
 * The ```yyerror()``` function is implemented to provide basic error handling. If a syntax error is detected in the input, the program prints an error message to the console.
